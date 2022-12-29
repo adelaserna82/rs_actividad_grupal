@@ -1,7 +1,7 @@
 package EmailQueueWithAdapter;
 
 public class EmailAdapter implements IEmailAdapter {
-    MailRelay mailRelay;
+    private MailRelay mailRelay;
 
     
     public EmailAdapter() {

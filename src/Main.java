@@ -3,7 +3,6 @@ import EmailQueueWithAdapter.EmailRequest;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
 
         EmailQueue queue = new EmailQueue();
         

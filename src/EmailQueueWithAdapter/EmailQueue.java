@@ -1,6 +1,5 @@
 package EmailQueueWithAdapter;
 
-import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
