@@ -11,6 +11,9 @@ public class Main {
             queue.enqueue(new EmailRequest("aa@gmail.com","Mensaje de alerta","Ojo!!! alerta número " + i));
         }
         
+        // Le decimos a la cola que mate el hilo una vez termine de enviar todos los corres.
+
+        queue.stopThreadWhenFinish();
 
     }
 }
