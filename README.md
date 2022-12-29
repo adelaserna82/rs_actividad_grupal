@@ -26,4 +26,6 @@ Este sería el diagrama de clases:
 
 En la clase **src/Main.java**, hemos creado una simulación de enviar de golpe 49 emails, de tal manera podemos ver que cuando llega a 20 tiene que esperar hasta que va desencolando los emails.
 
+Como manejo un hilo para que vaya desencolando y enviando el email en un segundo plano, una vez que he encolado todos los emails indico a la clase que cuando desencole todo lo que tiene puede matar el hilo.
+
 
