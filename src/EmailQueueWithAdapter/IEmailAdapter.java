@@ -1,5 +1,5 @@
 package EmailQueueWithAdapter;
 
-public interface IEmail {
+public interface IEmailAdapter {
     public Boolean send(EmailRequest emmailRequest);
 }

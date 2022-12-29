@@ -7,7 +7,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-/* Clase que implementa el envío de email a traves de la API del servicio online MailRelay */
+/* Clase que implementa el envío de email a traves de la API del servicio online MailRelay 
+ * Esta clase simula a la libreria o jar que nos proporcionaría MailRelay para su utilización.
+*/
 public class MailRelay {
     private String _tokenMailRelay="ec575826-523b-4296-8146-e52120cd2c35"; // Token del servicio online MailRelay, este lo tenemos que generar desde la web.
     private String _from="grupal@reutilizacionsoftware.com"; // Remitente del email, por defecto ponemos uno imaginario.

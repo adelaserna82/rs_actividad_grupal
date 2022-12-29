@@ -1,6 +1,6 @@
 package EmailQueueWithAdapter;
 
-public class Email implements IEmail {
+public class EmailAdapter implements IEmailAdapter {
 
     @Override
     public Boolean send(EmailRequest emmailRequest) {
