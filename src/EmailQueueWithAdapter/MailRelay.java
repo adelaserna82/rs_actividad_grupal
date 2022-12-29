@@ -17,7 +17,7 @@ public class MailRelay {
 
 
     // Método para enviar el email a través del API
-    public boolean SendEmail(String to, String subject, String message) {
+    public boolean sendEmail(String to, String subject, String message) {
         String urlSendEmail = _urlApi + "sendemail";
 
         try {
