@@ -6,21 +6,21 @@ public class EmailRequest {
     private String _subject;
     private String _message;
     
-    public EmailRequest(String _to, String _subject, String _message) {
-        this._to = _to;
-        this._subject = _subject;
-        this._message = _message;
+    public EmailRequest(String to, String subject, String message) {
+        this._to = to;
+        this._subject = subject;
+        this._message = message;
     }
 
-    public String get_to() {
+    public String getTo() {
         return _to;
     }
 
-    public String get_subject() {
+    public String getSubject() {
         return _subject;
     }
 
-    public String get_message() {
+    public String getMessage() {
         return _message;
     }
 }
