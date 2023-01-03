@@ -11,7 +11,7 @@ public class EmailAdapter implements IEmailAdapter {
 
     @Override
     public Boolean send(EmailRequest emmailRequest) {
-        _mailRelay.sendEmail(emmailRequest.get_to(), emmailRequest.get_subject(), emmailRequest.get_message());
+        _mailRelay.sendEmail(emmailRequest.getTo(), emmailRequest.getSubject(), emmailRequest.getMessage());
         return true;
     }
     

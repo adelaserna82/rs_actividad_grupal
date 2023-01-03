@@ -27,7 +27,7 @@ public class EmailQueue {
                         // Se enviá el email a través del adaptador.
                         _emailAdapter.send(email);
 
-                        System.out.println("Se ha obtenido el mensaje " + email.get_message() + " de la cola");
+                        System.out.println("Se ha obtenido el mensaje " + email.getMessage() + " de la cola");
                     } catch (Exception e) {
                         System.out.println("Error al desencolar y enviar el mensaje el mensaje");
                     }
