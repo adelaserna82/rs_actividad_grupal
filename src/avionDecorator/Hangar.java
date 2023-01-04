@@ -8,7 +8,8 @@ public class Hangar {
         String emailCliente1 = "cliente1@reutilizacion.com";
         String emailCliente2 = "cliente2@reutilizacion.com";
         String emailCliente3 = "cliente3@reutilizacion.com";
-        // Como vamos a
+        
+        // Como vamos a enviar un email al cliente cada vez que se termine con un avión, en este momento instanciamos la cola para poder realizar el envío de los emails
         EmailQueue queue = new EmailQueue();
 
 
