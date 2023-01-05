@@ -16,7 +16,7 @@ public class MailRelay {
             // Crea el cuerpo de la petición en formato JSON
             String jsonInputString = "{\"to\":\"" + to + "\",\"from\":\"" + _from + "\",\"subject\":\"" + subject + "\",\"message\":\"" + message + "\"}";
       
-            System.out.println("Email enivado: Objeto JSON que se envía a través dee MailRelay:\n" + jsonInputString);
+            System.out.println("Email enviado: Objeto JSON que se envía a través dee MailRelay:\n" + jsonInputString);
       
 
 
