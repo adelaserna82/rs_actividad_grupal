@@ -1,14 +1,14 @@
 package avionDecorator;
 
-public class A330 implements Avion{
+public class A330 implements Avion {
 
 	private String base;
 	
 	public A330() {
 		
-		base = "único piso";
+		base = "Unico piso";
 	}
-	@Override
+
 	public String crearAvion() {
 		
 		return base;

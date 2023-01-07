@@ -1,8 +1,8 @@
 package avionDecorator;
 
-public class Decoracion implements Avion{
+public class Decoracion implements Avion {
 
-	Avion modeloAvion;
+	private Avion modeloAvion;
 	private String asientosBase;
 	
 	public Decoracion(Avion modeloAvion) {
@@ -11,10 +11,8 @@ public class Decoracion implements Avion{
 		asientosBase = " 20 asientos turista";
 	}
 
-	@Override
 	public String crearAvion() {
 				
 		return modeloAvion.crearAvion();
 	}
-	
 }
