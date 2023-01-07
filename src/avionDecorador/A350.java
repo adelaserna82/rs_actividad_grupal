@@ -1,4 +1,4 @@
-package avionDecorator;
+package avionDecorador;
 
 public class A350 implements Avion {
 

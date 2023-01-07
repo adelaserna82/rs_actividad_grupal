@@ -1,4 +1,4 @@
-import avionDecorator.Hangar;
+import avionDecorador.Hangar;
 
 public class Main {
 
@@ -15,6 +15,6 @@ public class Main {
 	public static void main(String[] args) {
 		
        Hangar hangar = new Hangar();
-       hangar.montarAviones();
+       hangar.crearAviones();
     }
 }

@@ -1,11 +1,11 @@
-package avionDecorator;
+package avionDecorador;
 
 import ColaEmailsConAdaptador.ColaEmail;
 import ColaEmailsConAdaptador.DatosEmail;
 
 public class Hangar {
 	
-    public void montarAviones() {
+    public void crearAviones() {
     	
         String emailCliente1 = "cliente1@reutilizacion.com";
         String emailCliente2 = "cliente2@reutilizacion.com";
