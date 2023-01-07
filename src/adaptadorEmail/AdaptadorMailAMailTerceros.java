@@ -2,7 +2,7 @@ package adaptadorEmail;
 
 public class AdaptadorMailAMailTerceros implements AdaptadorEmail {
     
-	private String de = "grupal@reutilizacionsoftware.com"; // Remitente del email, por defecto ponemos uno imaginario.
+	private String REMITENTE = "grupal@reutilizacionsoftware.com"; // Remitente del email, por defecto ponemos uno imaginario.
 	private MailTerceros mailTerceros;
  
     public AdaptadorMailAMailTerceros() {
@@ -12,7 +12,7 @@ public class AdaptadorMailAMailTerceros implements AdaptadorEmail {
 
     public Boolean send(String para, String asunto, String mensaje) {
         
-    	mailTerceros.sendEmail(para, de, asunto, mensaje);
+    	mailTerceros.sendEmail(para, REMITENTE, asunto, mensaje);
         return true;
     }
 }

@@ -1,6 +1,8 @@
+package creacionAviones;
+
 import avionDecorador.Hangar;
 
-public class Main {
+public class Cliente {
 
     // La idea es que desde la clase Hangar.montarAviones se decoren los Aviones (utilizando el
     // patrón Decorator),
