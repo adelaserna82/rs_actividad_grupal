@@ -16,9 +16,7 @@ public class Hangar {
     	
         String emailCliente1 = "cliente1@reutilizacion.com";
         String emailCliente2 = "cliente2@reutilizacion.com";
-        String emailCliente3 = "cliente3@reutilizacion.com";
-        
-
+        String emailCliente3 = "cliente3@reutilizacion.com";       
 
         // SE CREA UN AVION A380
         Avion a380 = new A380();
