@@ -1,5 +1,3 @@
-package creacionAviones;
-
 import avionDecorador.Hangar;
 
 public class Cliente {
