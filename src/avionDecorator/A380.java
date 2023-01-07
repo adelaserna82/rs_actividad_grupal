@@ -6,7 +6,7 @@ public class A380 implements Avion {
 	
 	public A380() {
 		
-		base = "Doble piso";
+		base = "A380 de doble piso";
 	}
 
 	public String crearAvion() {

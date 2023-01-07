@@ -12,7 +12,7 @@ public class Main {
     // subproceso
     // en segundo plano (Un thread) envíe los emails (Para simular la latencia del
     // email le daremos 500ms de espera entre email y email).
-    public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
        Hangar hangar = new Hangar();
        hangar.montarAviones();
     }

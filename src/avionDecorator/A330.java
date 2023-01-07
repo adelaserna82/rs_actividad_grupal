@@ -6,7 +6,7 @@ public class A330 implements Avion {
 	
 	public A330() {
 		
-		base = "Unico piso";
+		base = "A330 de un piso";
 	}
 
 	public String crearAvion() {
