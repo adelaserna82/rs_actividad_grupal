@@ -10,7 +10,7 @@ public class A330 implements Avion {
 		base = "A330 de un piso";
 		asientos = " con 20 asientos de clase turista";
 		
-        System.out.println("** CREANDO AVIÓN A330 **");
+        System.out.println("============================================== CREANDO AVIÓN A330 =================================================");
 	}
 
 	public String crearAvion() {

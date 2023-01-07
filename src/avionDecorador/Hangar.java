@@ -1,9 +1,16 @@
 package avionDecorador;
 
-import ColaEmailsConAdaptador.ColaEmail;
-import ColaEmailsConAdaptador.DatosEmail;
+import adaptadorEmail.AdaptadorEmail;
+import adaptadorEmail.AdaptadorMailAMailTerceros;
 
 public class Hangar {
+	
+	private AdaptadorEmail email;
+	
+	public Hangar() {
+		
+		email = new AdaptadorMailAMailTerceros();
+	}
 	
     public void crearAviones() {
     	
@@ -11,8 +18,7 @@ public class Hangar {
         String emailCliente2 = "cliente2@reutilizacion.com";
         String emailCliente3 = "cliente3@reutilizacion.com";
         
-        // Como vamos a enviar un email al cliente cada vez que se termine con un avión, en este momento instanciamos la cola para poder realizar el envío de los emails
-        ColaEmail queue = new ColaEmail();
+
 
         // SE CREA UN AVION A380
         Avion a380 = new A380();
@@ -27,10 +33,10 @@ public class Hangar {
         // Se muestra el resultado final del avion A380
         System.out.println("Avión creado: " + resultadoAvion + ". \n");
         
-        // Se encola un email, para su envío en segundo plano, avisando de que ha finalizado
-        queue.enqueue(new DatosEmail(emailCliente1, "Avion A380 finalizado",
-                "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: "
-                        + resultadoAvion));     
+        // TODO:
+        email.send(emailCliente1, "Avion A380 finalizado",
+        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
+        						  + resultadoAvion);  
         
         // SE CREA UN AVION A350
         Avion a350 = new A350();
@@ -43,10 +49,10 @@ public class Hangar {
         // Se muestra el resultado final del avion A380
         System.out.println("Avión creado: " + a350.crearAvion() + ". \n");
         
-        // Se encola un email, para su envío en segundo plano, avisando de que ha finalizado
-        queue.enqueue(new DatosEmail(emailCliente2, "Avion A350 finalizado",
-                "Hola, se acaba de finalizar la adecuacion del avion segun lo solicitado. Estas son las características de su avion: "
-                        + resultadoAvion));
+        // TODO:
+        email.send(emailCliente2, "Avion A350 finalizado",
+        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
+        						  + resultadoAvion); 
         
         // SE CREA UN AVION A330
         Avion a330 = new A330();
@@ -59,13 +65,9 @@ public class Hangar {
         // Se muestra el resultado final del avion A380
         System.out.println("Avión creado: " + a330.crearAvion() + ". \n");
         
-        // Se encola un email, para su envío en segundo plano, avisando de que ha finalizado
-        queue.enqueue(new DatosEmail(emailCliente3, "Avion A330 finalizado",
-                "Hola, se acaba de finalizar la adecuacion del avion segun lo solicitado. Estas son las características de su avion: "
-                        + resultadoAvion));
-
-        // Dado que tenemos un subproceso, un thread, que está enviando los correos en segundo plano. Le indicamos que deje de escanear si tiene
-        // emails pendientes de enviar.
-        queue.stopThreadWhenFinish();
+        // TODO:
+        email.send(emailCliente3, "Avion A330 finalizado",
+        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
+        						  + resultadoAvion); 
     }
 }

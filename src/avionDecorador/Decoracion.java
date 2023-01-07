@@ -3,7 +3,6 @@ package avionDecorador;
 public class Decoracion implements Avion {
 
 	private Avion modeloAvion;
-
 	
 	public Decoracion(Avion modeloAvion) {
 		
