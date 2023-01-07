@@ -9,7 +9,7 @@ public class AsientosPrimera extends Decoracion {
 	
 	public String crearAvion() {
 		
-		System.out.println("Creando zona asientos Primera");
-		return super.crearAvion() + ", zona primera";
+		System.out.println(" - Creando zona de asientos de primera clase.");
+		return super.crearAvion() + ", asientos primera";
 	}
 }

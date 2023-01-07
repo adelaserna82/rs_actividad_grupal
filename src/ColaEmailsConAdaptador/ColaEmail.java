@@ -1,16 +1,16 @@
-package EmailQueueWithAdapter;
+package ColaEmailsConAdaptador;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class EmailQueue {
-    private BlockingQueue<EmailRequest> _queue;
-    private IEmailAdapter _emailAdapter;
+public class ColaEmail {
+    private BlockingQueue<DatosEmail> _queue;
+    private AdaptadorEmail _emailAdapter;
     private Boolean _stopThreadWhenFinish = false;
 
-    public EmailQueue() {
-        _emailAdapter = new EmailAdapter();
-        _queue = new ArrayBlockingQueue<EmailRequest>(20);
+    public ColaEmail() {
+        _emailAdapter = new AdaptadorMailRelayAMail();
+        _queue = new ArrayBlockingQueue<DatosEmail>(20);
 
         // Crea un hilo consumidor que obtenga mensajes de la cola
         Thread desEnqueueThread = new Thread(() -> {
@@ -19,7 +19,7 @@ public class EmailQueue {
                 if (!_queue.isEmpty()) {
                     try {
                         // Se desencola el email siguiente
-                        EmailRequest email = _queue.take();
+                        DatosEmail email = _queue.take();
 
                         // Espera medio segundo antes de ejecutar el proceso de nuev
                         Thread.sleep(500);
@@ -27,7 +27,7 @@ public class EmailQueue {
                         // Se enviá el email a través del adaptador.
                         _emailAdapter.send(email);
 
-                        System.out.println("Se ha obtenido el mensaje " + email.getMessage() + " de la cola");
+                        System.out.println("Se ha obtenido el mensaje {" + email.getMessage() + "} de la cola");
                     } catch (Exception e) {
                         System.out.println("Error al desencolar y enviar el mensaje el mensaje");
                     }
@@ -46,7 +46,7 @@ public class EmailQueue {
     }
 
     // Encola un mensaje a la cola
-    public void enqueue(EmailRequest emailRequest) {
+    public void enqueue(DatosEmail emailRequest) {
         // Como la cola sólo tiene 20 posiciones la cola, hay que esperar a que libere
         // espacio para encolar un nuevo email
         while (true) {

@@ -9,7 +9,7 @@ public class Bar extends Decoracion {
 	
 	public String crearAvion() {
 		
-		System.out.println("Creando zona Bar");
+		System.out.println(" - Creando zona de Bar.");
 		return super.crearAvion() + ", zona Bar";
 	}
 }

@@ -9,7 +9,7 @@ public class AsientosBusiness extends Decoracion {
 	
 	public String crearAvion() {
 		
-		System.out.println("Creando zona asientos Business");
-		return super.crearAvion() + ", zona business";	
+		System.out.println(" - Creando zona de asientos Business.");
+		return super.crearAvion() + ", asientos business";	
 	}	
 }

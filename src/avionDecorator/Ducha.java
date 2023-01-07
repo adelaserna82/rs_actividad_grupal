@@ -9,7 +9,7 @@ public class Ducha extends Decoracion {
 	
 	public String crearAvion() {
 		
-		System.out.println("Creando zona de duchas");
+		System.out.println(" - Creando zona de duchas.");
 		return super.crearAvion() + ", zona duchas";
 	}
 }
