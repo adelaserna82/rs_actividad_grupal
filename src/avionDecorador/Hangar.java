@@ -33,7 +33,7 @@ public class Hangar {
         // Se muestra el resultado final del avion A380
         System.out.println("Avión creado: " + resultadoAvion + ". \n");
         
-        // TODO:
+        // Envia un email de confirmación de pedido al cliente.
         email.send(emailCliente1, "Avion A380 finalizado",
         						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
         						  + resultadoAvion);  
@@ -49,7 +49,7 @@ public class Hangar {
         // Se muestra el resultado final del avion A380
         System.out.println("Avión creado: " + a350.crearAvion() + ". \n");
         
-        // TODO:
+     // Envia un email de confirmación de pedido al cliente.
         email.send(emailCliente2, "Avion A350 finalizado",
         						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
         						  + resultadoAvion); 
@@ -65,7 +65,7 @@ public class Hangar {
         // Se muestra el resultado final del avion A380
         System.out.println("Avión creado: " + a330.crearAvion() + ". \n");
         
-        // TODO:
+     // Envia un email de confirmación de pedido al cliente.
         email.send(emailCliente3, "Avion A330 finalizado",
         						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
         						  + resultadoAvion); 
