@@ -50,7 +50,7 @@ public class Hangar {
         Avion a330 = new A330();
         
         // Se decora el avion A330
-        a330 = new Ducha(a330);
+        a380 = new AsientosPrimera(a380);
         a330 = new Bar(a330);
         a330 = new AsientosBusiness(a330);
                 
