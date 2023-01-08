@@ -1,11 +1,11 @@
 package adaptadorEmail;
 
-public class AdaptadorMailAMailTerceros implements AdaptadorEmail {
+public class AdaptadorMailTercerosAMail implements AdaptadorEmail {
     
 	private String REMITENTE = "grupal@reutilizacionsoftware.com"; // Remitente del email, por defecto ponemos uno imaginario.
 	private MailTerceros mailTerceros;
  
-    public AdaptadorMailAMailTerceros() {
+    public AdaptadorMailTercerosAMail() {
         
     	mailTerceros = new MailTerceros();
     }

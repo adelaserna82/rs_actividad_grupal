@@ -1,7 +1,7 @@
 package avionDecorador;
 
 import adaptadorEmail.AdaptadorEmail;
-import adaptadorEmail.AdaptadorMailAMailTerceros;
+import adaptadorEmail.AdaptadorMailTercerosAMail;
 
 public class Hangar {
 	
@@ -9,7 +9,7 @@ public class Hangar {
 	
 	public Hangar() {
 		
-		email = new AdaptadorMailAMailTerceros();
+		email = new AdaptadorMailTercerosAMail();
 	}
 	
     public void crearAviones() {
