@@ -1,8 +1,8 @@
 package avionDecorador;
 
-public class Ducha extends Decoracion {
+public class Duchas extends Decoracion {
 
-	public Ducha(Avion modeloAvion) {
+	public Duchas(Avion modeloAvion) {
 		
 		super(modeloAvion);	
 	}

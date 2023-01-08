@@ -22,7 +22,7 @@ public class Hangar {
         Avion a380 = new A380();
         
         // Se decora el avion A380
-        a380 = new Ducha(a380);
+        a380 = new Duchas(a380);
         a380 = new Bar(a380);
         a380 = new AsientosPrimera(a380);
         a380 = new AsientosBusiness(a380);
@@ -40,7 +40,7 @@ public class Hangar {
         Avion a350 = new A350();
         
         // Se decora el avion A350
-        a350 = new Ducha(a350);
+        a350 = new Duchas(a350);
         a350 = new Bar(a350);
         a350 = new AsientosBusiness(a350);
                 
