@@ -28,12 +28,13 @@ public class Hangar {
         a380 = new AsientosBusiness(a380);
         
         String resultadoAvion = a380.crearAvion();
+        
         // Se muestra el resultado final del avion A380
         System.out.println("Avión creado: " + resultadoAvion + ". \n");
         
         // Envia un email de confirmación de pedido al cliente.
         email.send(emailCliente1, "Avion A380 finalizado",
-        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
+        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: \n   " 
         						  + resultadoAvion);  
         
         // SE CREA UN AVION A350
@@ -49,7 +50,7 @@ public class Hangar {
         
      // Envia un email de confirmación de pedido al cliente.
         email.send(emailCliente2, "Avion A350 finalizado",
-        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
+        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: \n   " 
         						  + resultadoAvion); 
         
         // SE CREA UN AVION A330
@@ -65,7 +66,7 @@ public class Hangar {
         
      // Envia un email de confirmación de pedido al cliente.
         email.send(emailCliente3, "Avion A330 finalizado",
-        						  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: " 
+				  				  "Hola, se acaba de finalizar la adecuación del avión según lo solicitado. Estas son las características de su avion: \n   "  
         						  + resultadoAvion); 
     }
 }
