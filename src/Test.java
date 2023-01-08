@@ -1,6 +1,6 @@
 import avionDecorador.Hangar;
 
-public class Cliente {
+public class Test {
 
 	public static void main(String[] args) {
 		
